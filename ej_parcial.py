@@ -70,14 +70,7 @@ while cola_aux.size() > 0:
 print()
 
 ##E)Listar los superheores que comienzan con  Bl, G, My, y W.
-#Inicial =('Bl', 'G', 'My', 'W')
-#tamaño = superheroes.size()
 print('Lista de heroes que empiezan con Bl, G, My, W: ')
-#for i in range(tamaño):
-#    heroe = superheroes[i]
- #   nombre = heroe['name']
-  #  if nombre.startswith(Inicial):
-   #        print(f'-{nombre}')
 superheroes.filter_start_with(('Bl', 'G', 'My', 'W'))
 print()
 
@@ -110,19 +103,13 @@ superheroes.filter_contain_on_bio(('time-traveling', 'suit'))
 print()
 
 ##J)Eliminar a Electro y Baron Zemo de la lista y mostrar su información si estaba en la lista.
-#buscado = superheroes.search('Electro', 'name')
-#if buscado is not None:
- #     heroe = superheroes[buscado]
-  #    print(f'-nombre: {heroe["name"]}, alias: {heroe["alias"]}, nombre real: {heroe["real_name"]}, biografia: {heroe["short_bio"]}, aparicion{heroe["first_appearance"]}, villano?: {heroe["is_villain"]}')
-   #   superheroes.delete_value(buscado, 'name')
-    
 Eliminado = superheroes.delete_value('Electro', 'name')
 print(f'Personaje eliminado: {Eliminado["name"]}, Alias: {Eliminado["alias"]}, Nombre Real: {Eliminado["real_name"]}, Biografia: {Eliminado["short_bio"]}, Aparicion: {Eliminado["first_appearance"]}, Villano? {heroe["is_villain"]}')
 
 print()
 
 Eliminado = superheroes.delete_value('Baron Zemo', 'name')
-print(f'Personaje Eliminado{Eliminado["name"]}, Alias: {Eliminado["alias"]}, Nombre Real: {Eliminado["real_name"]}, Biografia: {Eliminado["short_bio"]}, Aparicion: {Eliminado["first_appearance"]}, Villano? {Eliminado["is_villain"]}')
+print(f'Personaje Eliminado: {Eliminado["name"]}, Alias: {Eliminado["alias"]}, Nombre Real: {Eliminado["real_name"]}, Biografia: {Eliminado["short_bio"]}, Aparicion: {Eliminado["first_appearance"]}, Villano? {Eliminado["is_villain"]}')
 
 print()
 superheroes.show()
